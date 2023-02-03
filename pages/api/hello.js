@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 			{
 				method: 'PATCH',
 				headers: {
-					Authorization: `Bearer ${process.env.EDGE_CONFIG}`,
+					Authorization: `Bearer ${process.env.VERCEL_ACCESS_TOKEN}`,
 					'content-type': 'application/json',
 				},
 				body: JSON.stringify({
